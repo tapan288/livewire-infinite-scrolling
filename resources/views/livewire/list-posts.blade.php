@@ -4,6 +4,6 @@
     @endfor
 
     @if ($this->hasMorePages())
-        <button wire:click="loadMore">Load More</button>
+        <div class="-translate-y-32" x-intersect="$wire.loadMore"></div>
     @endif
 </div>
