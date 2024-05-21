@@ -1,6 +1,6 @@
 <div>
     @for ($chunk = 0; $chunk < $page; $chunk++)
-        {{ $chunk }}
+        <livewire:post-chunk :ids="$chunks[$chunk]" :key="$chunk" />
     @endfor
 
     @if ($this->hasMorePages())
